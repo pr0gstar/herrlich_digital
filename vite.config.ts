@@ -9,9 +9,11 @@ declare module "@remix-run/node" {
 }
 
 export default defineConfig({
+  base: "/herrlich_digital/",
   plugins: [
     remix({
       ssr: false,
+      basename: "/herrlich_digital/",
       future: {
         v3_fetcherPersist: true,
         v3_relativeSplatPath: true,
